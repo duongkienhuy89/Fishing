@@ -33,6 +33,8 @@ public class GameOver : MonoBehaviour {
 
     public void setData()
     {
+        try
+        {
         LoadAdsInterstitial();
         try
         {
@@ -99,7 +101,13 @@ public class GameOver : MonoBehaviour {
             SoundManager.Instance.PlayAudioOver();
         }
 
+        }
+        catch (System.Exception)
+        {
 
+
+            throw;
+        }
 
        
     }
@@ -107,6 +115,8 @@ public class GameOver : MonoBehaviour {
     void onClick_Continute()
     {
       
+        try
+        {
         GameController.instance.resetGame();
         PopUpController.instance.HideGameOver();
         PopUpController.instance.ShowNextGame();
@@ -115,14 +125,29 @@ public class GameOver : MonoBehaviour {
         {
             ShowAdsInterstitial();
         }
- 
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
      
     }
 
 	// Use this for initialization
 	void Start () {
+        try
+        {
         btnContinute.OnClick += onClick_Continute;
         LoadAdsInterstitial();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 	}
 	
 	// Update is called once per frame

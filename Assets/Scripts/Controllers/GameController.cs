@@ -88,12 +88,21 @@ public class GameController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        try
+        {
         currentState = State.SHA;
         LoadBanner();
         StartCoroutine(WaitTimeLoadData(3f));
         mDiem = 0;
         setTartget();
         stCoin = DataManager.GetHightStringCoin();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 	}
 
     IEnumerator WaitTimeLoadData(float mtime)

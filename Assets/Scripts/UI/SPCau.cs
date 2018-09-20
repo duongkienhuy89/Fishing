@@ -13,7 +13,16 @@ public class SPCau : MonoBehaviour {
 
     public void setLuoiCau()
     {
+        try
+        {
         luoicau.setQuay();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
 
 	// Use this for initialization

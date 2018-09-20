@@ -7,6 +7,8 @@ public class MainMenu : MonoBehaviour {
 
     void onClick_Continute()
     {
+        try
+        {
         if (GameController.instance.currentState == GameController.State.START)
         {
             PopUpController.instance.ShowDoCau();
@@ -15,6 +17,13 @@ public class MainMenu : MonoBehaviour {
             GroupFishController.instance.Create();
 
             GameController.instance.HideBanner();
+        }
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
         }
     }
 

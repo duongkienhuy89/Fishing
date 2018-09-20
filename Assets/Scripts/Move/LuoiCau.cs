@@ -110,7 +110,8 @@ public class LuoiCau : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-
+        try
+        {
         if (currentState == State.DOWN || currentState == State.ON)
         {
             sumCoinColider += other.gameObject.GetComponent<Boi>().mCoin;
@@ -128,8 +129,14 @@ public class LuoiCau : MonoBehaviour {
         {
             checkRemove = 3;
         }
-       
-        
+
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
       
     }
 

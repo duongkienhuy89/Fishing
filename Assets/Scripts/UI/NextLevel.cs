@@ -11,34 +11,79 @@ public class NextLevel : MonoBehaviour {
 
     public void setData()
     {
+        try
+        {
         txtLevel.text = "Level "+GameController.instance.mLevel;
         txtTarget.text = "Target " + GameController.instance.mTarget;
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
 
     void onClickPlay()
     {
+        try
+        {
         PopUpController.instance.HideNextGame();
         GameController.instance.currentState = GameController.State.INGAME;
        // GroupFishController.instance.Create();
         GameController.instance.setTartget();
         Toucher.resetTouch();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
 
     void onClick_Share()
     {
+        try
+        {
         ShareRate.Share();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
     void onClick_Rank()
     {
+        try
+        {
         ShareRate.Rate();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
 
 	// Use this for initialization
 	void Start () {
 
+        try
+        {
         btnPlay.OnClick += onClickPlay;
         btnShare.OnClick += onClick_Share;
         btnRank.OnClick += onClick_Rank;
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 	
 	}
 	

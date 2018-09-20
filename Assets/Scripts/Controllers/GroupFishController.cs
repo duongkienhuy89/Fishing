@@ -129,7 +129,16 @@ public class GroupFishController : MonoBehaviour {
 
     public void CreateCoin(int pCoin)
     {
+        try
+        {
         CreateDetailCoin(UnityEngine.Random.Range(-100, 150), UnityEngine.Random.Range(maxY+10, maxY + 110), pCoin);
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
     }
 
 
@@ -269,9 +278,18 @@ public class GroupFishController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //Create(10);
+        try
+        {
         currentState = State.CRS;
         CreateMapMoCa();
         CreateBongBong();
+        }
+        catch (System.Exception)
+        {
+
+
+            throw;
+        }
 	}
 
     void doCheckCreate()
