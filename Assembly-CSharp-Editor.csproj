@@ -188,14 +188,23 @@
  <Reference Include="UnityEditor.TreeEditor">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
+ <Reference Include="Google.IOSResolver_v1.2.64.0">
+ <HintPath>E:/CKH/UnityProject/Fishing/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.64.0.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver_v1.2.64.0">
+ <HintPath>E:/CKH/UnityProject/Fishing/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.64.0.dll</HintPath>
+ </Reference>
  <Reference Include="Google.VersionHandler">
- <HintPath>D:/vtc/Fishing/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ <HintPath>E:/CKH/UnityProject/Fishing/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandlerImpl_v1.2.64.0">
+ <HintPath>E:/CKH/UnityProject/Fishing/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.64.0.dll</HintPath>
  </Reference>
  <Reference Include="tk2dExternal">
- <HintPath>D:/vtc/Fishing/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
+ <HintPath>E:/CKH/UnityProject/Fishing/Assets/TK2DROOT/tk2d/Editor/tk2dExternal.dll</HintPath>
  </Reference>
  <Reference Include="tk2dSkin">
- <HintPath>D:/vtc/Fishing/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
+ <HintPath>E:/CKH/UnityProject/Fishing/Assets/TK2DROOT/tk2d/Editor/tk2dSkin.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
@@ -208,15 +217,6 @@
  </Reference>
  <Reference Include="UnityEditor.WindowsStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Google.VersionHandlerImpl_v1.2.64.0">
- <HintPath>D:/vtc/Fishing/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.64.0.dll</HintPath>
- </Reference>
- <Reference Include="Google.JarResolver_v1.2.64.0">
- <HintPath>D:/vtc/Fishing/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.64.0.dll</HintPath>
- </Reference>
- <Reference Include="Google.IOSResolver_v1.2.64.0">
- <HintPath>D:/vtc/Fishing/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.64.0.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
